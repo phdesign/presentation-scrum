@@ -1,28 +1,5 @@
 # We don't do Scrum
 
-### Ceremonies
-
-* Sprint planning
-* Standups
-* Backlog grooming
-* Retrospective
-* Sprint review
-
-### Artifacts
-
-* Sprint backlog
-* Product backlog
-* Backlog items
-* Sprint burndown chart
-* Release burndown
-
-### Roles
-
-* Product owner
-* Scrummaster
-* Development team
-
-
 
 ## Script outline
 
@@ -109,4 +86,8 @@ We've discussed that the Sprint Backlog gets created at the start of a Sprint, t
 
 Once the Sprint Backlog has been created developers then take tasks off the backlog as they become available. Each morning the team will have a Daily Scrum meeting where everyone presents what they worked on yesterday, what they will work on today and any blockers they have. It's important that the Daily Scrum doesn't turn into a discussion and it's the ScrumMasters responsibility to keep everyone on track and get through it as quickly as possible, parking any topics for further discussion after the meeting. The Daily Scrum shouldn't last for more than 15 minutes. The Sprint Backlog should be updated during the Daily Scrum with the estimates of what time is left for each task.
 
-Sometime during the Sprint, the Product Owner and one or more team members will hold a Backlog Grooming session. During this meeting any new Product Backlog Items need to be sized and the Product Backlog should be re-prioritised as needed. Usually a Product Owner will use both business value and development effort to determine the best order for return on investment. (Maybe show slide about which ones to tackle - high value, low effort, low value, high effort). It's worth noting that the Product Owner (and in fact anyone) can add new Product Backlog Items to the Product Backlog at any time, but as I've said only the Product Owner can order them.
+Sometime during the Sprint, the Product Owner and one or more team members will hold a Backlog Grooming session. During this meeting any new Product Backlog Items need to be sized and the Product Backlog should be re-prioritised as needed. Usually a Product Owner will use both business value and development effort to determine the best order for return on investment. (Maybe show slide about which ones to tackle - high value, low effort, low value, high effort). It's worth noting that the Product Owner (and in fact anyone) can add new Product Backlog Items to the Product Backlog at any time, but as I've said only the Product Owner can order them. The Backlog Grooming session is time boxed to X hours per week of sprint.
+
+Finally, at the end of the sprint the team will hold a Sprint Retrospective and a Sprint Review. The retro is an opportunity for the team to discuss the process and any changes they think would help. In a similar way to how Scrum aims to incrementally build product allowing for change, Scrum also encourages incremental change to the team processes to keep refining and improving them. The way the retro is run is up to the team but typically it includes everyone talking about what worked, what didn't work and what they can do differently. Only the ScrumMaster and team are allowed to attend the retro. 
+
+Either before or after the retro the team will also hold a Sprint Review, the review is intended to showcase the work the team has done during the sprint. Everyone is invited to the Sprint Review, including clients both in the business and externally. The Sprint Review is not intended to be a presentation but a time for every to reflect on the product in a judgement free environment. Everyone is encourages to share their thoughts and usually the feedback from the Sprint Review is added to the Product Backlog for prioritisation.
