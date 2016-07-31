@@ -76,18 +76,23 @@ article {
 
 // bespoke-state styles
 
-.bespoke-parent.dark {
-  background-color: #222;
-  color: #fff;
-  h1, h2, h3, h4, p, li {
-    text-shadow: 1px 1px fade(#000, 50%);
+.bespoke-parent {
+  &.dark {
+    background-color: #222;
+    color: #fff;
+    h1, h2, h3, h4, p, li {
+      text-shadow: 1px 1px fade(#000, 50%);
+    }
   }
-}
-.bespoke-parent.black {
-  background-color: #000;
-}
-.bespoke-parent.white {
-  background-color: #fff;
+  &.tan {
+    background-color: @color_tan;
+  }
+  &.black {
+    background-color: #000;
+  }
+  &.white {
+    background-color: #fff;
+  }
 }
 
 // bespoke-bullet styles
@@ -145,6 +150,9 @@ article {
   }
   &.cover {
     background-size: cover;
+  }
+  &.rugby-scrum {
+    background-image: url('../images/rugby-scrum.jpg');
   }
   &.shuhari {
     background-image: url('../images/shuhari.jpg');
@@ -212,7 +220,7 @@ h2 {
 }
 
 h3 {
-  font-size: (@font_size_base * 1.2);
+  font-size: (@font_size_base * 1.6);
   font-weight: 300;
   margin-bottom: (@font_size_base * 0.4);
 }
@@ -250,6 +258,9 @@ b {
   text-decoration: line-through;
 }
 .quote {
+  font-size: (@font_size_base * 1.2);
+  font-weight: 300;
+  margin-bottom: (@font_size_base * 0.4);
   font-style: italic;
   .quote-marks {
     font-size: (@font_size_base * 3);
@@ -343,11 +354,12 @@ b {
     color: @color_tan;
   }
 }
-.agile-manifesto-faded {
-  li {
-    opacity: 0.3;
-  }
-  li.highlight {
-    opacity: 1;
-  }
+.faded {
+  opacity: 0.3;
+}
+.underline {
+  border-bottom: 1px solid #333;
+}
+.dark .underline {
+  border-bottom: 1px solid #fff;
 }
