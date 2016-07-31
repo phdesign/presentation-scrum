@@ -3,6 +3,7 @@
 @color_primary: #00F3A5;
 @color_dark_grey: #333;
 @color_grey: #999;
+@color_tan: #EEAA7B;
 
 @font_size_base: 40px;
 @font_color: @color_dark_grey;
@@ -75,21 +76,18 @@ article {
 
 // bespoke-state styles
 
-.dark {
+.bespoke-parent.dark {
   background-color: #222;
   color: #fff;
   h1, h2, h3, h4, p, li {
     text-shadow: 1px 1px fade(#000, 50%);
   }
 }
-.black {
+.bespoke-parent.black {
   background-color: #000;
 }
-.white {
+.bespoke-parent.white {
   background-color: #fff;
-}
-.agenda {
-  background-color: #134f5c;
 }
 
 // bespoke-bullet styles
@@ -148,11 +146,15 @@ article {
   &.cover {
     background-size: cover;
   }
-  &.dayne {
-    background-image: url('../images/dayne.jpg');
+  &.shuhari {
+    background-image: url('../images/shuhari.jpg');
   } 
-  &.versent {
-    background-image: url('../images/versent.jpg');
+  &.agile-umbrella {
+    background-image: url('../images/agileumbrella.png');
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
   } 
 }
 .bespoke-backdrop-inactive {
@@ -332,4 +334,20 @@ b {
 .textshadow {
   color: #000;
   text-shadow: 1px 1px fade(#fff, 50%);
+}
+.agile-manifesto {
+  color: darken(#fff, 30%);
+
+  strong {
+    font-weight: normal;
+    color: @color_tan;
+  }
+}
+.agile-manifesto-faded {
+  li {
+    opacity: 0.3;
+  }
+  li.highlight {
+    opacity: 1;
+  }
 }

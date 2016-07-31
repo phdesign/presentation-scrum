@@ -83,7 +83,7 @@ console.log('is IE?', isIE);
 // Bespoke.js
 bespoke.from('article', [
   bespoke.plugins.classes(),
-  bespoke.plugins.bullets('.bullet, li'),
+  bespoke.plugins.bullets('.bullet'),
   bespoke.plugins.backdrop(),
   bespoke.plugins.scale(isIE ? 'transform' : undefined),
   bespoke.plugins.hash(),
