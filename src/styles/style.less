@@ -254,8 +254,14 @@ a {
 b {
   font-weight: 400;
 }
+
+// Typography styles
+
 .strikethrough {
   text-decoration: line-through;
+}
+.muted {
+
 }
 .quote {
   font-size: (@font_size_base * 1.2);
@@ -279,7 +285,32 @@ b {
     margin-left: 0.25em;
     .quote-marks;
   }
+  &.text-small {
+    &:before {
+      font-size: (@font_size_base * 1.8);
+    }
+    &:after {
+      font-size: (@font_size_base * 1.8);
+    }
+  }
 }
+.align-left {
+  text-align: left;
+}
+.underline {
+  border-bottom: 1px solid #333;
+}
+.dark .underline {
+  border-bottom: 1px solid #fff;
+}
+.muted {
+  color: @color_grey;
+}
+.text-small {
+  font-size: 0.8em;
+}
+// Margins
+
 .small-gap {
   margin-bottom: (@font_size_base * 0.4);
 }
@@ -294,6 +325,9 @@ b {
     color: #905;
   }
 }
+
+// Elements
+
 .me {
   background-image: url("../images/me.jpg");
   background-size: 100%;
@@ -329,15 +363,14 @@ b {
     margin-right: (@font_size_base * 0.25);
   }
 }
-.align-left {
-  text-align: left;
-}
 .row-2-columns {
-  float: left;
-  clear: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  
   .col1, .col2 {
-    float: left;
-    width: 550px;
+    flex: 1;
     margin: 0 10px;
     overflow: hidden;
   }
@@ -349,17 +382,10 @@ b {
 .agile-manifesto {
   color: darken(#fff, 30%);
 
-  strong {
-    font-weight: normal;
+  b {
     color: @color_tan;
   }
 }
 .faded {
   opacity: 0.3;
-}
-.underline {
-  border-bottom: 1px solid #333;
-}
-.dark .underline {
-  border-bottom: 1px solid #fff;
 }
