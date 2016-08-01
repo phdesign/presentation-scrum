@@ -23,7 +23,10 @@ gulp.task('images', ['clean:images'], function() {
 });
 
 gulp.task('fonts', ['clean:fonts'], function() {
-    return gulp.src('bower_components/font-awesome/fonts/**/*')
+    return gulp.src([
+            'bower_components/font-awesome/fonts/**/*',
+            'bower_components/glyphicons/fonts/**/*',
+        ])
         .pipe(gulp.dest('dist/fonts'));
 });
 
